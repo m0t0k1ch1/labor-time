@@ -1,7 +1,7 @@
 [% WRAPPER 'include/layout_after_auth.tt' %]
 
 [% IF !workplace %]
-  <p>At first, please set your workplace → <b><a href="profile">profile</a></b></p>
+  <p>At first, please set your workplace → <b><a href="/profile">profile</a></b></p>
 [% ELSE %]
   <table class="table">
     [% FOREACH work_log IN work_logs %]
