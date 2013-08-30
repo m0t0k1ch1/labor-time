@@ -1,0 +1,22 @@
+[% WRAPPER 'include/layout_after_auth.tt' %]
+
+[% IF !workplace %]
+  <p>At first, please set your workplace → <b><a href="profile">profile</a></b></p>
+[% ELSE %]
+  <table class="table">
+    [% FOREACH work_log IN work_logs %]
+      <tr>
+        <th>[% $work_log.date %]</th>
+        <td>
+          <ul>
+            [% FOREACH time_log IN work_log.time_logs %]
+              <li>[% time_log.start_time %] ~ [% time_log.end_time %]</li>
+            [% END %]
+          </ul>
+        </td>
+      </tr>
+    [% END %]
+  </table>
+[% END %]
+
+[% END %]

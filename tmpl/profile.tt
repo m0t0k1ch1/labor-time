@@ -1,0 +1,49 @@
+[% WRAPPER 'include/layout_after_auth.tt' %]
+
+<h1>Profile</h1>
+<table class="table">
+  <tr>
+    <th>User ID</th>
+    <td>[% profile.userId %]</td>
+  </tr>
+  <tr>
+    <th>Workplace</th>
+    <td>
+      [% IF workplace %]
+        [% workplace.workplace_address %]
+      [% ELSE %]
+        -
+      [% END %]
+    </td>
+  </tr>
+  <tr>
+    <th>Joined date</th>
+    <td>[% profile.profile.firstDate %]</td>
+  </tr>
+  <tr>
+    <th>Time zone</th>
+    <td>[% profile.profile.currentTimeZone.id %]</td>
+  </tr>
+</table>
+
+<p>Set your workplace</p>
+<table class="table">
+  <tr>
+    <th>address</th>
+    <th></th>
+  </tr>
+  [% FOREACH place IN regular_places %]
+    <tr>
+       <td>[% place.address %]</td>
+       <td>
+         <form action="/set_workplace" method="post">
+           <input type="hidden" name="workplace_id" value="[% place.id %]" />
+           <input type="hidden" name="workplace_address" value="[% place.address %]" />
+           <input type="submit" value="set" class="btn btn-success" />
+         </form>
+       </td>
+    </tr>
+  [% END %]
+</table>
+
+[% END %]

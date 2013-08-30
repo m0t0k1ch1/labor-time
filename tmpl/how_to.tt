@@ -1,0 +1,10 @@
+[% WRAPPER 'include/layout_after_auth.tt' %]
+
+<h1>How to use "labor time"</h1>
+<ul>
+  <li>1. Install <a href="http://www.moves-app.com/" target="_blank">"moves"</a> on your iPhone.</li>
+  <li>2. Go to the <a href="/">home page</a>, and authorize "labor time".</li>
+  <li>3. Go to the <a href="/profile">profile page</a>, and set your workplace.</li>
+</ul>
+
+[% END %]
