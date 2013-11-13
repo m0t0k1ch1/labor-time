@@ -1,7 +1,7 @@
 labor-time
 ==========
 
-a sample application to use 'moves' API
+an application built with Amon2 to use 'moves' API 
 
  [labor time](http://labortime.k1ch1.com)
 
