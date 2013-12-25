@@ -1,7 +1,7 @@
 labor-time
 ==========
 
-[labor-time](http://labortime.k1ch1.com)
+[labor-time](http://labor-time.k1ch1.com)
 
 an application using 'moves' API, built with Amon2
 
