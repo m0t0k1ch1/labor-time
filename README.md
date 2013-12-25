@@ -5,5 +5,5 @@ labor-time
 
 an application using 'moves' API, built with Amon2
 
-##About "labor-time"  
+##About 'labor-time'
 * [moves の API で遊んでみた](http://m0t0k1ch1st0ry.com/blog/2013/08/29/moves-api)
