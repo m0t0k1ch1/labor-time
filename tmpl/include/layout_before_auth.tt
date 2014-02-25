@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="static/css/main.css">
   </head>
   <body>
-    <div class="navbar navbar-default navbar-static-top navbar-inverse">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+      <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">labor-time</a>
         </div>
       </div>
-    </div>
+    </nav>
     <div class="container">
       <div id="main">
         <div class="row">
