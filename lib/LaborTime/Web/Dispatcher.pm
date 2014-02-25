@@ -244,8 +244,8 @@ sub work_logs {
                     my $start_time = DateTime::Format::HTTP->parse_datetime($segment->{startTime});
                     my $end_time   = DateTime::Format::HTTP->parse_datetime($segment->{endTime});
                     push @time_logs, {
-                        start_time => $start_time->add(hours => 9)->hms,
-                        end_time   => $end_time->add(hours => 9)->hms,
+                        start_time => $start_time->hms,
+                        end_time   => $end_time->hms,
                     };
                 }
             }
