@@ -39,7 +39,7 @@
          <form action="/set_workplace" method="post">
            <input type="hidden" name="workplace_id" value="[% place.id %]" />
            <input type="hidden" name="workplace_address" value="[% place.address %]" />
-           <input type="submit" value="set" class="btn btn-success" />
+           <input type="submit" value="set" class="btn btn-default" />
          </form>
        </td>
     </tr>

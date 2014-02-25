@@ -3,7 +3,7 @@
 <h1>signin</h1>
 <p>Please authorize "labor-time"</p>
 <a href="[% moves_authorize_uri %]">
-  <span class="btn">Authorize</span>
+  <span class="btn btn-default">Authorize</span>
 </a>
 
 [% END %]
