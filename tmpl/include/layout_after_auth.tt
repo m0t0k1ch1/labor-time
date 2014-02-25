@@ -9,6 +9,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/static/css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="/static/js/jquery-1.10.0.min.js"></script>
   </head>
   <body[% IF bodyID %] id="[% bodyID %]"[% END %]>
     <div class="navbar navbar-fixed-top">
@@ -33,7 +34,6 @@
         Powered by <a href="http://amon.64p.org/">Amon2</a>
       </footer>
     </div>
-    <script src="/static/js/jquery-1.10.0.min.js"></script>
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
     <script src="/static/js/es5-shim.min.js"></script>
     <script src="/static/js/micro_template.js"></script>
