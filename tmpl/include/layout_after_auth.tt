@@ -11,7 +11,7 @@
     <nav class="navbar navbar-default navbar-static-top navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"></button>
           <a class="navbar-brand" href="/">labor-time</a>
         </div>
         <div id="navbar-collapse" class="collapse navbar-collapse">
