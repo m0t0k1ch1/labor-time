@@ -243,10 +243,12 @@ sub work_logs {
                 if ($segment->{place}->{id} == $workplace_id) {
                     my $start_time = DateTime::Format::HTTP->parse_datetime($segment->{startTime});
                     my $end_time   = DateTime::Format::HTTP->parse_datetime($segment->{endTime});
-                    push @time_logs, {
-                        start_time => $start_time->hms,
-                        end_time   => $end_time->hms,
-                    };
+                    if ($start_time->ymd eq $result->{date}) {
+                        push @time_logs, {
+                            start_time => $start_time->hms,
+                            end_time   => $end_time->hms,
+                        };
+                    }
                 }
             }
             $work_log{time_logs} = \@time_logs;
