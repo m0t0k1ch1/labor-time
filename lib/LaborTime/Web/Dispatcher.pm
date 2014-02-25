@@ -7,7 +7,7 @@ use utf8;
 use Amon2::Web::Dispatcher::Lite;
 
 use DateTime;
-use DateTime::Format::Strptime;
+use DateTime::Format::HTTP;
 use Geo::Coder::Google::V3;
 use JSON;
 use Net::OAuth2::Profile::WebServer;
@@ -225,9 +225,6 @@ sub work_logs {
     my ($c, $workplace_id) = @_;
 
     my $now = DateTime->now(time_zone => 'local');
-    my $format = DateTime::Format::Strptime->new(
-        pattern => '%Y%m%dT%H%M%SZ',
-    );
 
     my @work_logs;
     for my $i (reverse 0..3) {
@@ -244,8 +241,8 @@ sub work_logs {
             my @time_logs;
             for my $segment (@{ $result->{segments} }) {
                 if ($segment->{place}->{id} == $workplace_id) {
-                    my $start_time = $format->parse_datetime($segment->{startTime});
-                    my $end_time   = $format->parse_datetime($segment->{endTime});
+                    my $start_time = $DateTime::Format::HTTP->parse_datetime($segment->{startTime});
+                    my $end_time   = $DateTime::Format::HTTP->parse_datetime($segment->{endTime});
                     push @time_logs, {
                         start_time => $start_time->add(hours => 9)->hms,
                         end_time   => $end_time->add(hours => 9)->hms,
