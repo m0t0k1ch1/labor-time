@@ -1,12 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>[% title || 'labor-time' %]</title>
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/static/css/main.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="/static/js/jquery-1.10.0.min.js"></script>
@@ -35,16 +32,7 @@
       </footer>
     </div>
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/js/es5-shim.min.js"></script>
-    <script src="/static/js/micro_template.js"></script>
-    <script src="/static/js/strftime.js"></script>
-    <script src="/static/js/sprintf-0.7-beta1.js"></script>
-    <script src="/static/js/micro-location.js"></script>
-    <script src="/static/js/micro_dispatcher.js"></script>
     <script src="/static/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <script>
      (function(i, s, o, g, r, a, m) {
        i['GoogleAnalyticsObject'] = r;
