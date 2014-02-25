@@ -7,20 +7,9 @@
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <script src="[% uri_for('/static/js/jquery-1.10.0.min.js') %]"></script>
-    <link href="[% uri_for('/static/bootstrap/css/bootstrap.css') %]" rel="stylesheet" type="text/css" />
-    <script src="[% uri_for('/static/bootstrap/js/bootstrap.js') %]"></script>
-    <script src="[% uri_for('/static/js/es5-shim.min.js') %]"></script>
-    <script src="[% uri_for('/static/js/micro_template.js') %]"></script>
-    <script src="[% uri_for('/static/js/strftime.js') %]"></script>
-    <script src="[% uri_for('/static/js/sprintf-0.7-beta1.js') %]"></script>
-    <script src="[% uri_for('/static/js/micro-location.js') %]"></script>
-    <script src="[% uri_for('/static/js/micro_dispatcher.js') %]"></script>
+    <link href="[% static_file('/static/bootstrap/css/bootstrap.min.css') %]" rel="stylesheet" type="text/css" />
     <link href="[% static_file('/static/css/main.css') %]" rel="stylesheet" type="text/css" media="screen" />
-    <script src="[% static_file('/static/js/main.js') %]"></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="[% static_file('/static/js/jquery-1.10.0.min.js') %]"></script>
   </head>
   <body[% IF bodyID %] id="[% bodyID %]"[% END %]>
     <div class="navbar navbar-fixed-top">
@@ -38,6 +27,17 @@
         Powered by <a href="http://amon.64p.org/">Amon2</a>
       </footer>
     </div>
+    <script src="[% static_file('/static/bootstrap/js/bootstrap.min.js') %]"></script>
+    <script src="[% static_file('/static/js/es5-shim.min.js') %]"></script>
+    <script src="[% static_file('/static/js/micro_template.js') %]"></script>
+    <script src="[% static_file('/static/js/strftime.js') %]"></script>
+    <script src="[% static_file('/static/js/sprintf-0.7-beta1.js') %]"></script>
+    <script src="[% static_file('/static/js/micro-location.js') %]"></script>
+    <script src="[% static_file('/static/js/micro_dispatcher.js') %]"></script>
+    <script src="[% static_file('/static/js/main.js') %]"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <script>
      (function(i, s, o, g, r, a, m) {
        i['GoogleAnalyticsObject'] = r;
