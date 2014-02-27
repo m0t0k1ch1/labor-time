@@ -12,6 +12,12 @@ requires 'Plack::Session'                 , '0.14';
 requires 'Test::WWW::Mechanize::PSGI'     , '0';
 requires 'Time::Piece'                    , '1.20';
 
+requires 'DateTime';
+requires 'DateTime::Format::HTTP';
+requires 'Geo::Coder::Google::V3';
+requires 'JSON';
+requires 'Net::OAuth2::Profile::WebServer';
+
 on 'configure' => sub {
    requires 'Module::Build', '0.38';
    requires 'Module::CPANfile', '0.9010';
