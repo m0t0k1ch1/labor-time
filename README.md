@@ -1,5 +1,5 @@
 labor-time
-=====
+==========
 
 [labor-time](http://labor-time.k1ch1.com)
 
